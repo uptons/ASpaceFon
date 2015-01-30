@@ -1,0 +1,14 @@
+<%= setup_context :title => "Home", :suppress_breadcrumb => true %>
+
+<div class="row-fluid">
+   <%= render_aspace_partial :partial => "shared/flash_messages" %>
+
+   <div class="span12">
+      <h1><%= I18n.t "welcome.heading" %></h1>
+      <% if session["user"] %>
+        <p><%= I18n.t "welcome.message_logged_in" %></p>
+      <% else %>
+        <p><%= I18n.t "welcome.message" %></p>
+      <% end %>
+   </div>
+</div>
