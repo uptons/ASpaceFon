@@ -84,8 +84,10 @@ AppConfig[:jetty_shutdown_path] = "/xkcd"
 #
 AppConfig[:backend_instance_urls] = proc { [AppConfig[:backend_url]] }
 
-AppConfig[:frontend_theme] = "default"
-AppConfig[:public_theme] = "default"
+#AppConfig[:frontend_theme] = "default"
+#AppConfig[:public_theme] = "default"
+AppConfig[:public_theme] = "ricefon"
+AppConfig[:frontend_theme] = "ricefon"
 
 AppConfig[:session_expire_after_seconds] = 3600
 
